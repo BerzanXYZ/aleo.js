@@ -1,30 +1,40 @@
 {
-  "name": "test1235",
-  "version": "0.0.6",
+  "name": "aleo",
+  "version": "0.0.0",
+  "description": "Aleo JavaScript API",
+  "keywords": [
+    "aleo",
+    "api",
+    "sdk",
+    "blockchain"
+  ],
+  "license": "MIT",
+  "author": "Berzan <berzan@tutanota.com>",
+  "homepage": "https://github.com/berzanxyz/aleo.js/.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/berzanxyz/aleo.js/.git"
+  },
+  "bugs": {
+    "url": "https://github.com/berzanxyz/aleo.js/.git/issues"
+  },
   "publishConfig": {
     "access": "public"
   },
   "main": "lib/index.cjs.js",
   "module": "lib/index.esm.js",
   "types": "lib/index.d.ts",
-  "files": [
-    "lib",
-    "src"
-  ],
+  "files": ["lib"],
   "scripts": {
     "build": "rm -rf lib types && yarn tsc --emitDeclarationOnly true && rollup -c && rm -rf types",
     "publish-package": "yarn build && yarn publish && rm -rf lib"
   },
+  "dependencies": {},
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.5.0",
     "@types/node": "^18.7.15",
-    "@types/node-fetch": "^2.6.2",
     "rollup": "^2.79.0",
     "rollup-plugin-dts": "^4.2.2",
-    "tslib": "^2.4.0",
     "typescript": "^4.8.2"
-  },
-  "dependencies": {
-    "@solana/web3.js": "^1.56.2"
   }
 }
