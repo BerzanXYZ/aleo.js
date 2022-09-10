@@ -59,7 +59,7 @@ const transactions = await connection.getTransactions(0)
 
 ### Documentation, as you type.
 
-![](https://github.com/BerzanXYZ/aleo.js/docs/images/screenshot_1.png)
+![](https://raw.githubusercontent.com/BerzanXYZ/aleo.js/main/docs/images/screenshot_1.png)
 
 
 
