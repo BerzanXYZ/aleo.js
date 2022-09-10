@@ -32,7 +32,6 @@
     "publish-package": "yarn build && yarn publish && rm -rf lib"
   },
   "dependencies": {
-    "blakejs": "^1.2.1",
     "node-fetch": "2"
   },
   "devDependencies": {
